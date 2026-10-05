@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#075b3c">
+<title>FUTMinna CBT — Study & Practice</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#"><span>F</span> FUTMinna <b>CBT</b></a>
+  <nav><a href="#levels">Levels</a><a href="#modes">Practice</a><a href="#progress">Progress</a></nav>
+  <button class="ghost" id="login">Student login</button>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <div class="eyebrow">FEDERAL UNIVERSITY OF TECHNOLOGY, MINNA</div>
+    <h1>Study smarter.<br><em>Practice with purpose.</em></h1>
+    <p>A CBT preparation platform for FUTMinna students from 100L to 500L. Choose your level, practise a course, and see how you're improving.</p>
+    <div class="buttons"><a class="primary" href="#levels">Start practicing →</a><a class="secondary" href="#modes">How it works</a></div>
+    <div class="mini-stats"><div><strong>100L–500L</strong><small>Levels</small></div><div><strong>Timed</strong><small>Exam mode</small></div><div><strong>Instant</strong><small>Results</small></div></div>
+  </div>
+  <div class="mock">
+    <div class="mock-head"><span>Practice • MTH 101</span><b>04:32</b></div>
+    <h3>If f(x)=2x+3, what is f(4)?</h3>
+    <button class="answer good">A. 11 <span>✓</span></button>
+    <button class="answer">B. 8</button><button class="answer">C. 7</button><button class="answer">D. 5</button>
+    <div class="bar"><i></i></div><small>Question 7 of 20</small>
+  </div>
+</section>
+
+<section id="levels" class="section">
+  <div class="section-title"><div><div class="eyebrow">ACADEMIC LEVEL</div><h2>Pick your level</h2></div><p>Start with your current level. Course lists can later be replaced with your official departmental curriculum.</p></div>
+  <div class="levels" id="levelsGrid"></div>
+  <div class="course-box" id="courseBox"></div>
+</section>
+
+<section id="modes" class="section tinted">
+  <div class="eyebrow">PRACTICE ARENA</div><h2>Three ways to prepare</h2>
+  <div class="modes">
+    <button data-mode="practice"><span>01</span><h3>Practice</h3><p>Answer questions at your own pace and learn from explanations.</p><b>Start →</b></button>
+    <button data-mode="exam"><span>02</span><h3>Exam simulation</h3><p>Timed CBT with question navigation and automatic scoring.</p><b>Start →</b></button>
+    <button data-mode="review"><span>03</span><h3>Review mistakes</h3><p>Return to questions you missed and strengthen weak areas.</p><b>Review →</b></button>
+  </div>
+</section>
+
+<section id="progress" class="section progress-section">
+  <div><div class="eyebrow">YOUR DASHBOARD</div><h2>Progress that tells a story.</h2><p>Once accounts are connected, this area will show attempts, scores, accuracy, weak topics and study streaks.</p></div>
+  <div class="progress-card"><div><span>Practice accuracy</span><strong>—</strong></div><div class="bigbar"><i></i></div><div class="grid2"><span>Questions attempted <b>0</b></span><span>Exams completed <b>0</b></span><span>Best score <b>—</b></span><span>Study streak <b>0 days</b></span></div></div>
+</section>
+</main>
+
+<footer>© 2026 FUTMinna CBT · Built as a study aid. Use only authorized academic question content.</footer>
+
+<div class="modal hide" id="modal"><div class="dialog"><button class="x" id="close">×</button><div id="dialogBody"></div></div></div>
+<script src="app.js"></script>
+</body>
+</html>
